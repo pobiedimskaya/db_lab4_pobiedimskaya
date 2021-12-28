@@ -1,5 +1,5 @@
 -- Повертає середню ціну домів з певним айді продажу
-CREATE OR REPLACE FUNCTION vaccines_in_country(smth int) RETURNS int AS
+CREATE OR REPLACE FUNCTION average_sale_price(smth int) RETURNS int AS
 $$
   DECLARE
     avg_sale integer;
