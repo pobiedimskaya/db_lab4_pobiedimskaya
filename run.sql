@@ -55,5 +55,5 @@ CREATE TRIGGER neighborhood_updater
 
 select * from neighborhoods
 INSERT INTO neighborhoods(neighborhood_id, neighborhood_name)
-VALUES(330, 'Troesch.');
+VALUES(330, 'Troesch');
 select * from neighborhoods
