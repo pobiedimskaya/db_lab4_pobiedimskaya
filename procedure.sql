@@ -10,6 +10,6 @@ BEGIN
 	FROM sales
 	JOIN houses USING(sale_id)
 	WHERE houses.year_built = house_year;
-    RAISE INFO 'Year built: %,  Average price: %', year_built, average_price;
+    RAISE INFO 'Year built: %,  Average price: %', house_year, average_price;
 END;
 $$;
