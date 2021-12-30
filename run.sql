@@ -43,7 +43,7 @@ $$
   
   BEGIN
   	RAISE NOTICE 'NEW:%',NEW;
-	NEW.neighborhood_name := 'Neighborhood is ' || NEW.neighborhood_name;
+	NEW.neighborhood_name := 'New: ' || NEW.neighborhood_name;
 	return NEW;
 	
   END;
@@ -55,5 +55,5 @@ CREATE TRIGGER neighborhood_updater
 
 select * from neighborhoods
 INSERT INTO neighborhoods(neighborhood_id, neighborhood_name)
-VALUES(330, 'tRoEsChInA');
+VALUES(330, 'Troesch.');
 select * from neighborhoods
