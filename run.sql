@@ -5,7 +5,7 @@ $$
   DECLARE
     avg_sale integer;
   BEGIN
-    SELECT AVG(*) INTO avg_sale
+    SELECT AVG(sale_price) INTO avg_sale
     FROM sales
     WHERE sales.sale_id > smth;
     
